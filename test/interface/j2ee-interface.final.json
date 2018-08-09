@@ -1,0 +1,700 @@
+{
+	"info": {
+		"_postman_id": "71f3637e-d3a0-4251-aeb8-f756ae118f6b",
+		"name": "j2ee-interface",
+		"description": "接口测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "139.199.207.214/api/lexical/regularExpression",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "23"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"RE\":[\"a|b|(double)\"]}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/lexical/regularExpression",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"lexical",
+						"regularExpression"
+					]
+				},
+				"description": "接口描述：构建状态机服务器前后端接口"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/generateVerificationCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "28"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentID\":\"201530613061\"}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/forgetPasswordGetVerificationCode",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"forgetPasswordGetVerificationCode"
+					]
+				},
+				"description": "接口描述：用于用户注册时发送邮箱验证码"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/forgetPasswordGetVerificationCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "160"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentName\":\"zhoudongodng\",\"studentID\":\"201530613514\",\"password\":\"123456\",\"email\":\"se_ws_mail@126.com\",\"verificationCode\":\"AjXHQm\",\"verificationAttribute\":1}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/addUser",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"addUser"
+					]
+				},
+				"description": "接口描述：忘记密码"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/addUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "160"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentName\":\"zhoudongodng\",\"studentID\":\"201530613514\",\"password\":\"123456\",\"email\":\"se_ws_mail@126.com\",\"verificationCode\":\"AjXHQm\",\"verificationAttribute\":1}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/addUser",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"addUser"
+					]
+				},
+				"description": "接口描述：注册"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "48"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentID\":\"201530613514\",\"password\":\"123456\"}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/login",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"login"
+					]
+				},
+				"description": "接口描述：登录"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/modifyPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "76"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentID\":\"201530613514\",\"old_password\":\"123456\",\"new_password\":\"654321\"}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/modifyPassword",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"modifyPassword"
+					]
+				},
+				"description": "接口描述：修改密码"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/modifyPasswordOfForgetPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "134"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentID\":\"201530613513\",\"verificationCode\":\"nvnq4m\",\"verificationAttribute\":2,\"new_password\":\"123456\",\"email\":\"2210663134@qq.com\"}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/modifyPasswordOfForgetPassword",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"modifyPasswordOfForgetPassword"
+					]
+				},
+				"description": "接口描述：用于修改密码\r\n接受输入：studentID用户的账号（学号），password密码，email邮箱，verificationCode验证码,verificationAttribute 验证码的类型\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/collectionAdd",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "90"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data_content\":\"t=a|b\",\"collectionType\":0,\"displayOrNot\":true,\"studentID\":\"201530613513\"}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/collectionAdd",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"collectionAdd"
+					]
+				},
+				"description": "接口描述：已经登陆的用户，想增加收藏"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/collectionQuery",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "28"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentID\":\"201530613513\"}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/collectionQuery",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"collectionQuery"
+					]
+				},
+				"description": "接口描述：已经登陆的用户，查看收藏"
+			},
+			"response": []
+		},
+		{
+			"name": "http://139.199.207.214/api/user_function/collectionDelete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "46"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "139.199.207.214"
+					},
+					{
+						"key": "Origin",
+						"value": "http://139.199.207.214"
+					},
+					{
+						"key": "Referer",
+						"value": "http://139.199.207.214/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"collectionID\":13,\"studentID\":\"201530613513\"}"
+				},
+				"url": {
+					"raw": "http://139.199.207.214/api/user_function/collectionDelete",
+					"protocol": "http",
+					"host": [
+						"139",
+						"199",
+						"207",
+						"214"
+					],
+					"path": [
+						"api",
+						"user_function",
+						"collectionDelete"
+					]
+				},
+				"description": "接口描述：已经登陆的用户，删除收藏选项"
+			},
+			"response": []
+		}
+	]
+}

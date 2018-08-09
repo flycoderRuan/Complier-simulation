@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "71f3637e-d3a0-4251-aeb8-f756ae118f6b",
+		"name": "j2ee-interface",
+		"description": "接口测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8088/api/lexical/regularExpression",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "488f23ad-3573-4166-a0e2-3787d32500cd",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "13"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "localhost:8088"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:8088"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:8088/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"RE\":[\"do\"]}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/lexical/regularExpression?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"lexical",
+						"regularExpression"
+					],
+					"query": [
+						{
+							"key": "Accept",
+							"value": "application/json, text/plain, */*",
+							"disabled": true
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "gzip, deflate, br",
+							"disabled": true
+						},
+						{
+							"key": "Accept-Language",
+							"value": "zh-CN,zh;q=0.9",
+							"disabled": true
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"disabled": true
+						},
+						{
+							"key": "Content-Length",
+							"value": "13",
+							"disabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"disabled": true
+						},
+						{
+							"key": "Host",
+							"value": "localhost:8088",
+							"disabled": true
+						},
+						{
+							"key": "Origin",
+							"value": "http://localhost:8088",
+							"disabled": true
+						},
+						{
+							"key": "Referer",
+							"value": "http://localhost:8088/",
+							"disabled": true
+						},
+						{
+							"key": "User-Agent",
+							"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/api/lexical/regularExpression",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "12"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Host",
+						"value": "localhost:8088"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:8088"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:8088/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"RE\":[\"{\"]}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/lexical/regularExpression",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"lexical",
+						"regularExpression"
+					]
+				},
+				"description": "接口测试：不合法的正则表达式"
+			},
+			"response": []
+		}
+	]
+}
